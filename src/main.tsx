@@ -2,9 +2,9 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-
+console.log("asd : ", import.meta.env.BASE_URL);
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <App />
   </BrowserRouter>
 );
