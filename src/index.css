@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "dx-bold";
+  src: url("./assets/fonts/dx-bold.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "dx-light";
+  src: url("./assets/fonts/dx-light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "dx-medium";
+  src: url("./assets/fonts/dx-medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "dx-thin";
+  src: url("./assets/fonts/dx-thin.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  --swiper-theme-color: #222222;
+  --swiper-navigation-size: 30px;
+}
+
+.bank-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+
+  & > * {
+    border-bottom: 1px solid #dcd9d9;
+  }
+}
+
+.show > .bank-wrapper {
+  max-height: 19rem;
+}

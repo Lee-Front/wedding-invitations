@@ -2,6 +2,19 @@ html,
 body,
 #root {
   height: 100vh;
+  width: 100%;
+  min-width: 360px;
+
+  overflow-x: hidden;
+  --webkit-scrollbar {
+    display: none;
+  }
+}
+#root {
+  display: flex;
+  background-color: #f6faff;
+  justify-content: center;
+  overflow-y: scroll;
 }
 
 html,
@@ -127,4 +140,8 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+td {
+  font-size: 0.625rem;
 }
