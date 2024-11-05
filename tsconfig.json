@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "ES2015",
-    "types": ["navermaps"]
+    "types": ["navermaps", "vite/client"]
   },
   "files": [],
   "references": [

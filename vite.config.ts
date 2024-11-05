@@ -9,7 +9,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: "/wedding-invitations/",
+  base: "/wedding-invitations",
   build: {
     outDir: "build",
   },

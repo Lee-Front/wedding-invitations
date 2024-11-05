@@ -26,8 +26,8 @@ const NaverMap = ({ x, y, zoom }: { x: number; y: number; zoom: number }) => {
   return (
     <div
       ref={mapRef}
-      style={{ width: "100%", aspectRatio: "1/1" }}
-      className="border border-blue border-2 border-solid max-w-[450px]"
+      style={{ width: "100%" }}
+      className="mt-6 sm:h-[350px] h-[300px]"
     />
   );
 };

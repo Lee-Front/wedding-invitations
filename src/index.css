@@ -39,10 +39,35 @@
   transition: max-height 0.3s ease-out;
 
   & > * {
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid #4699ff;
   }
 }
 
 .show > .bank-wrapper {
   max-height: 19rem;
+}
+
+.show > .bank-button {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.arrow {
+  transition: all ease 0.5s;
+}
+.show .arrow {
+  transform: rotateZ(-180deg);
+}
+
+.trans {
+  p {
+    position: relative;
+    padding-left: 12px;
+    &:before {
+      content: "•";
+      position: absolute;
+      top: -1px;
+      left: 0px;
+    }
+  }
 }

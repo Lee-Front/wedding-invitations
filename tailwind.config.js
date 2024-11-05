@@ -4,7 +4,7 @@ export default {
     extend: {
       colors: {
         "sky-blue": "#F6FAFF",
-        blue: "#4699FF",
+        blue: "#4699ff",
         red: "#FF457D",
         marker: "#5282C2",
       },
